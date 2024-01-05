@@ -39,7 +39,7 @@ def main():
     for path in src_path:
         dependency = Dependency((Path.cwd() / Path(path)).resolve(strict=False))
         if dependency.name not in [d.name for d in dependencies]:
-            dependencies.append(Dependency((Path.cwd() / Path(path)).resolve(strict=False)))
+            dependencies.append(dependency)
             check_file(path, dependencies, dependency.path.parent)
 
     # prepare the out file content
