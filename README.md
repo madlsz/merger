@@ -11,12 +11,13 @@ This script was created to automate the process of consolidating source code fil
 
 ## Example
 ```
-merger.py ./source.cpp ./result.cpp
+merger.py ./source.cpp ... ./result.cpp
 ```
 
 ## Usage
 - The first argument (./source.cpp) is the path to the root file of your C/C++ project.
-- The second argument (./result.cpp) is the desired output file.
+- You can provide as many root files as you want.
+- The last argument (./result.cpp) is the desired output file.
 
 ## Potential Issues
 - The resulting file is not a valid C/C++ file and cannot be compiled. Use it only for the specified purpose of consolidating source code files.
