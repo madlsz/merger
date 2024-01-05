@@ -1,4 +1,4 @@
-#! /bin/python
+#!/usr/bin/env python
 
 import sys
 from pathlib import Path
@@ -63,4 +63,4 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print(e) 
-        input("press Enter to close this window...")
+        input("press Enter to exit...")
