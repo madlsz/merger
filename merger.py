@@ -58,7 +58,7 @@ def main():
     choice = "y"
     if os.path.isfile(out_path):
         print(f"{out_path} exists and will be overwritten!")
-        choice = input("Do you want to continue?[y/n]> ")
+        choice = input("Do you want to continue?[Y/n]> ") or "y"
     if choice.lower() == "y":
         with open(out_path, "w", encoding="utf8") as f:
             f.write(out_file_content)
